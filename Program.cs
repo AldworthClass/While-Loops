@@ -116,6 +116,7 @@ namespace While_Loops
             }
         }
 
+        // Solutions for Task 2 - Dice Doubles
         public static void Task2DiceDoubles(Random generator)
         {
             int num1 = 1, num2 = 0;  // I made num1 and num2 different values so we get into the loop at least once
