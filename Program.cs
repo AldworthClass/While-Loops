@@ -76,23 +76,23 @@ namespace While_Loops
                 Console.WriteLine("YOU HAVE RUN OUT OF TRIES.  ACCOUNT LOCKED.");
         }
 
-        // Completed Counter example from lesson with suggestions.
+        // Completed Counter example from lesson with some suggestions.
         public static void CountExample()
         {
             string message;
             int count = 0;
             int repetitions;
 
-            Console.WriteLine("Type in a message, and I'll display it several.");
+            Console.WriteLine("Type in a message, and I'll display it several times.");
             Console.WriteLine("Message: ");
             message = Console.ReadLine();
             Console.WriteLine("How many times? ");
             repetitions = Convert.ToInt32(Console.ReadLine());
 
-            while (count < repetitions * 10) // We multiplied by 10 here because we counted by 10s
+            while (count < repetitions) 
             {
-                Console.WriteLine((count + 10) + ". " + message);
-                count += 10;    // Increase by 10 instead of 1
+                Console.WriteLine((count + 1) + ". " + message);
+                count ++;    
             }
         }
 
@@ -144,7 +144,7 @@ namespace While_Loops
             int numbers = 5; // User will enter this many numbers.
             int input;
 
-            Console.WriteLine("You will be prompted to enter 5 numbers and I will add them for you.")
+            Console.WriteLine("You will be prompted to enter 5 numbers and I will add them for you.");
             while (count < numbers)
             {
                 Console.WriteLine("Please enter a number:");
